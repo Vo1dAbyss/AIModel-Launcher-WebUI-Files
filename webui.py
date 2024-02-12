@@ -50,4 +50,4 @@ gradio_interface = gr.ChatInterface(chocolate_ai, title="Chocolate AI", descript
 
 print("Done!")
 
-gradio_interface.launch()
+gradio_interface.launch(inbrowser=True)
