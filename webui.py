@@ -37,7 +37,7 @@ print("Generating gradio interface...")
 past_user_inputs = []
 generated_responses = []
 
-def chocolate_ai(message, history):
+def ai_talk(message, history):
     conversation = Conversation(message, past_user_inputs = past_user_inputs, generated_responses = generated_responses)
     conversation = chatbot(conversation)
 
@@ -46,7 +46,7 @@ def chocolate_ai(message, history):
 
     return conversation.generated_responses[-1]
 
-gradio_interface = gr.ChatInterface(chocolate_ai, title="Chocolate AI", description="Type to start a conversation.")
+gradio_interface = gr.ChatInterface(ai_talk, title="DialoGPT-medium-GPT4 AI", description="Type to start a conversation.")
 
 print("Done!")
 
