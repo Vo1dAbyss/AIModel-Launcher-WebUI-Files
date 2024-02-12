@@ -14,12 +14,12 @@ import configparser
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-print(config.get("PROPERTIES", "model_name"))
-
 print("Done!")
 time.sleep(1)
 
 print("Downloading AI...")
+
+print("Using selected model: " + config.get("PROPERTIES", "model_name"))
 
 model = GPT2LMHeadModel.from_pretrained(config.get("PROPERTIES", "model_name"))
 tokenizer = AutoTokenizer.from_pretrained(config.get("PROPERTIES", "model_name"))
