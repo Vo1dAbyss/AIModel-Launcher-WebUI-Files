@@ -46,7 +46,7 @@ def ai_talk(message, history):
 
     return conversation.generated_responses[-1]
 
-gradio_interface = gr.ChatInterface(ai_talk, title="DialoGPT-medium-GPT4 AI", description="Type to start a conversation.")
+gradio_interface = gr.ChatInterface(ai_talk, title="AIModel-Launcher-WebUI AI", description="Type to start a conversation.")
 
 print("Done!")
 
