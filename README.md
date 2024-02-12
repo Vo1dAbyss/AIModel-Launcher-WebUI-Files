@@ -1,3 +1,2 @@
-DialoGPT-medium-GPT4-Interface-Files 
----------------------------------------
-This is a gradio UI made for a model made by ingen51.
+# AIModel-Launcher-WebUI
+This is a gradio UI made for conversational models.
